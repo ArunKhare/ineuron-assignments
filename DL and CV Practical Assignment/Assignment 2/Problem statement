@@ -1,0 +1,17 @@
+Objective: - Image Classification with CIFAR 100
+
+This dataset is just like the CIFAR-10, except it has 100 classes containing 600
+images each. There are 500 training images and 100 testing images per class.
+The 100 classes in the CIFAR-100 are grouped into 20 superclasses. Each image
+comes with a &quot;fine&quot; label (the class to which it belongs) and a &quot;coarse&quot; label
+(the superclass to which it belongs).
+
+Dataset Link: - https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+The dataset is not direct images. Please decode it using your own techniques.
+
+Task: - Create a Web Application using Flask. Use the end user should be able
+to upload an image and get results with the prediction score.
+
+Deployment: - Any Free Platform(Try to look out for free options.)
+
+Assignment Submission: - Only submit the hosted app link.

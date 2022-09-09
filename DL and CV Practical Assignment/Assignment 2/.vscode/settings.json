@@ -1,0 +1,10 @@
+{
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.importFormat": "absolute",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.extraPaths": [
+        "C:\\Users\\arunk\\Assignments\\DL and CV Practical Assignment\\Assignment 2\\cifar-100-python"
+    ]
+}

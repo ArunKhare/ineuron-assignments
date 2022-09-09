@@ -1,0 +1,59 @@
+<meta HTTP-EQUIV="REFRESH" content="0; url=http://www.cs.toronto.edu/~kriz/cifar.html">
+
+The CIFAR-100 dataset
+This dataset is just like the CIFAR-10, except it has 100 classes containing 600 images each. There are 500 training images and 100 testing images per class. 
+The 100 classes in the CIFAR-100 are grouped into 20 superclasses. Each image comes with a "fine" label (the class to which it belongs) and a "coarse" label 
+(the superclass to which it belongs).
+
+data -- a 10000x3072 numpy array of uint8s. Each row of the array stores a 32x32 colour image. The first 1024 entries contain the red channel values, the next
+ 1024 the green, and the final 1024 the blue. 
+ The image is stored in row-major order, so that the first 32 entries of the array are the red channel values of the first row of the image.
+
+Here is the list of classes in the CIFAR-100:
+
+Superclass	                    Classes
+aquatic                         mammals	beaver, dolphin, otter, seal, whale
+fish	                        aquarium fish, flatfish, ray, shark, trout
+flowers	                        orchids, poppies, roses, sunflowers, tulips
+food                            containers	bottles, bowls, cans, cups, plates
+fruit and vegetables	        apples, mushrooms, oranges, pears, sweet peppers
+household electrical devices	clock, computer keyboard, lamp, telephone, television
+household furniture	            bed, chair, couch, table, wardrobe
+insects	                        bee, beetle, butterfly, caterpillar, cockroach
+large carnivores	            bear, leopard, lion, tiger, wolf
+large man-made outdoor things	bridge, castle, house, road, skyscraper
+large natural outdoor scenes	cloud, forest, mountain, plain, sea
+large omnivores and herbivores	camel, cattle, chimpanzee, elephant, kangaroo
+medium-sized mammals	        fox, porcupine, possum, raccoon, skunk
+non-insect invertebrates	    crab, lobster, snail, spider, worm
+people	                        baby, boy, girl, man, woman
+reptiles	                    crocodile, dinosaur, lizard, snake, turtle
+small mammals	                hamster, mouse, rabbit, shrew, squirrel
+trees	                        maple, oak, palm, pine, willow
+vehicles 1	                    bicycle, bus, motorcycle, pickup truck, train
+vehicles 2	                    lawn-mower, rocket, streetcar, tank, tractor
+
+
+Download
+Version	Size	md5sum
+CIFAR-100 python version	161 MB	eb9058c3a382ffc7106e4002c42a8d85
+CIFAR-100 Matlab version	175 MB	6a4bfa1dcd5c9453dda6bb54194911f4
+CIFAR-100 binary version (suitable for C programs)	161 MB	03b5dce01913d631647c71ecec9e9cb8
+Dataset layout
+Python / Matlab versions
+The python and Matlab versions are identical in layout to the CIFAR-10, so I won't waste space describing them here.
+Binary version
+The binary version of the CIFAR-100 is just like the binary version of the CIFAR-10, except that each image has two label bytes (coarse and fine) 
+and 3072 pixel bytes, so the binary files look like this:
+<1 x coarse label><1 x fine label><3072 x pixel>
+...
+<1 x coarse label><1 x fine label><3072 x pixel>
+Indices into the original 80 million tiny images dataset
+Sivan Sabato was kind enough to provide this file, which maps CIFAR-100 images to images in the 80 million tiny images dataset. Sivan Writes:
+The file has 60000 rows, each row contains a single index into the tiny db,
+where the first image in the tiny db is indexed "1". "0" stands for an image that is not from the tiny db.
+The first 50000 lines correspond to the training set, and the last 10000 lines correspond
+to the test set.
+Reference
+This tech report (Chapter 3) describes the dataset and the methodology followed when collecting it in much greater detail. Please cite it if you intend to use this dataset.
+Learning Multiple Layers of Features from Tiny Images, Alex Krizhevsky, 2009.

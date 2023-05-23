@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Aire-sur-la-Lys",
+        "id": "425",
+        "nametype": "Valid",
+        "recclass": "Unknown",
+        "fall": "Fell",
+        "year": "1769-01-01T00:00:00.000",
+        "reclat": "50.666670",
+        "reclong": "2.333330",
+        "geolocation": {
+            "type": "Point",
+            "coordinates": [
+                2.33333,
+                50.66667
+            ]
+        }
+    },
+    {
+        "name": "Northwest Africa 5815",
+        "id": "50693",
+        "nametype": "Valid",
+        "recclass": "L5",
+        "mass": "256.8",
+        "fall": "Found",
+        "reclat": "0.000000",
+        "reclong": "0.000000",
+        "geolocation": {
+            "type": "Point",
+            "coordinates": [
+                0,
+                0
+            ]
+        }
+    },
+    {
+        "name": "Aire-sur-la-Lys",
+        "id": "425",
+        "nametype": "Valid",
+        "recclass": "Unknown",
+        "fall": "Fell",
+        "year": "1769-01-01T00:00:00.000",
+        "reclat": "50.666670",
+        "reclong": "2.333330",
+        "geolocation": {
+            "type": "Point",
+            "coordinates": [
+                2.33333,
+                50.66667
+            ]
+        }
+    }
+]

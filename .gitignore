@@ -10,3 +10,9 @@ env
 .pkl
 .xls
 .xlsx
+*.zip
+*.csv
+*.gz
+*.7z
+*.xlsx
+*.arff

@@ -1,0 +1,4 @@
+{
+    "jupyter.exportWithOutputEnabled": true,
+    "workbench.editor.defaultBinaryEditor": "jupyter-notebook"
+}

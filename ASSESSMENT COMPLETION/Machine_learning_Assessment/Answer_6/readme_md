@@ -1,0 +1,10 @@
+ Use CMD line:
+ streamlit run ./Answer_6/loanEligibility.py
+
+ docker build -t loan-eligibility-app .
+
+ docker run -p 8501:8501 loan-eligibility-app
+
+
+checking container docker run --rm -it --name streamlits_eligibilitypred  bash
+docker container ls --all --format ‘{{ json . }}’ | python3 -m json.tool --json-lines

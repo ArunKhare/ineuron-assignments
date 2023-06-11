@@ -1,0 +1,49 @@
+version: 2.1
+
+jobs:
+  deploy_app1:
+    docker:
+      - image: circleci/python:3.10
+
+    steps:
+      - checkout
+
+      # Steps specific to App 1
+      # ...
+
+      - run:
+          name: Deploy App 1 to AWS
+          command: |
+            # Deployment commands for App 1
+
+  deploy_app2:
+    docker:
+      - image: circleci/python:3.10
+
+    steps:
+      - checkout
+
+      # Steps specific to App 2
+      # ...
+
+      - run:
+          name: Deploy App 2 to AWS
+          command: |
+            # Deployment commands for App 2
+
+  deploy_app3:
+    docker:
+      - image: circleci/python:3.10
+
+    steps:
+      - checkout
+
+      # Steps specific to App 3
+      # ...
+
+      - run:
+          name: Deploy App 3 to AWS
+          command: |
+            # Deployment commands for App 3
+
+# Add more "deploy_appX" jobs for additional applications as needed
